@@ -20,7 +20,7 @@ export class PostDetailPage extends React.Component {
     super(props);
   }
 
-  this.state = {
+  state = {
     name: this.props.post.name,
     title: this.props.post.title,
     content: this.props.post.content,
