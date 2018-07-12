@@ -16,9 +16,6 @@ import { getPost } from '../../PostReducer';
 import { getShowEditPost } from '../../../App/AppReducer';
 
 export class PostDetailPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   state = {
     name: this.props.post.name,
@@ -84,9 +81,9 @@ function mapDispatchToProps(dispatch, props) {
   };
 }
 // Actions required to provide data for this component to render in server side.
-/*PostDetailPage.need = [params => {
+PostDetailPage.need = [params => {
   return fetchPost(params.cuid);
-}];*/
+}];
 
 // Retrieve data from store as props
 function mapStateToProps(state, props) {
