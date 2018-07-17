@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 // Import Actions
 import { toggleAddPost } from './AppActions';
 import { switchLanguage } from '../../modules/Intl/IntlActions';
+import Navigation from './components/Navigation/Navigation';
 
 let DevTools;
 if (process.env.NODE_ENV === 'development') {
@@ -53,6 +54,7 @@ export class App extends Component {
               },
             ]}
           />
+          <Navigation />
           <Header
             switchLanguage={lang => this.props.dispatch(switchLanguage(lang))}
             intl={this.props.intl}
