@@ -1,15 +1,16 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
+import styles from './Navigation.css';
 
 const Navigation = (props, context) => (
-    <div>
-        <ul>
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/posts">Posts</Link></li>
-            <li><Link to="/about">About</Link>/li>
-        </ul>
-    </div>
+  <div className={styles.nav}>
+    <ul className={styles['nav--list']}>
+      <li><Link to="/home" className={styles['nav--list__element']}>Home</Link></li>
+      <li><Link to="/posts" className={styles['nav--list__element']}>Posts</Link></li>
+      <li><Link to="/about" className={styles['nav--list__element']}>About</Link></li>
+    </ul>
+  </div>
 );
 
 Navigation.PropTypes = {

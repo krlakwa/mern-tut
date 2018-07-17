@@ -1,0 +1,18 @@
+.nav {
+    position: absolute;
+    left: 0;
+    margin-top: 7px;
+}
+
+.nav--list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav--list__element {
+    padding: 4px;
+    margin-right: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
