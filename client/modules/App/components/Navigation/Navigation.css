@@ -4,12 +4,12 @@
     margin-top: 7px;
 }
 
-.nav--list {
+.nav__list {
     display: flex;
     list-style-type: none;
 }
 
-.nav--list__element {
+.nav__element {
     padding: 4px;
     margin-right: 4px;
     text-decoration: none;
